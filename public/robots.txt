@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://indiversa-storefront-builder.hasislam2010.workers.dev/sitemap.xml
