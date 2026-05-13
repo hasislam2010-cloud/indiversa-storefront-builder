@@ -29,18 +29,38 @@ export default {
 
     // Route: Ping Bing IndexNow API
     if (url.pathname === '/ping-bing') {
-      const bingIndexNowUrl = \`https://www.bing.com/indexnow?url=\${encodeURIComponent(SITE_URL)}&key=\${INDEXNOW_KEY}\`;
+      const bingIndexNowUrl = `https://www.bing.com/indexnow?url=${encodeURIComponent(SITE_URL)}&key=${INDEXNOW_KEY}`;
       
       try {
         const bingResponse = await fetch(bingIndexNowUrl);
         if (bingResponse.ok) {
           return new Response('Successfully pinged Bing IndexNow with URL: ' + SITE_URL, { status: 200 });
         } else {
-          return new Response(\`Bing ping failed with status \${bingResponse.status}\`, { status: bingResponse.status });
+          return new Response(`Bing ping failed with status ${bingResponse.status}`, { status: bingResponse.status });
         }
       } catch (error) {
-        return new Response(\`Error pinging Bing: \${error.message}\`, { status: 500 });
+        return new Response(`Error pinging Bing: ${error.message}`, { status: 500 });
       }
+    }
+
+    // Route: Sitemap XML
+    if (url.pathname === '/sitemap.xml') {
+      const currentDate = new Date().toISOString().split('T')[0];
+      const sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${SITE_URL}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>`;
+
+      return new Response(sitemapXML, {
+        headers: {
+          'content-type': 'application/xml;charset=UTF-8',
+        },
+      });
     }
 
     // Default Route: Serve the Static HTML Landing Page
