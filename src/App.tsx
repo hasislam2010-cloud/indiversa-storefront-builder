@@ -91,7 +91,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fbfbfd] text-[#1d1d1f] pb-24">
+    <main className="min-h-screen bg-[#fbfbfd] text-[#1d1d1f] pb-24">
       {/* Container simulating a mobile app width for universal elegance */}
       <div className="max-w-md mx-auto p-4 sm:p-6 space-y-6">
         
@@ -244,6 +244,53 @@ export default function App() {
         </section>
 
       </div>
-    </div>
+
+      <article className="max-w-3xl mx-auto px-6 py-12 mt-16 bg-white rounded-3xl shadow-sm border border-[#f5f5f7] text-[#1d1d1f]">
+        <section className="mb-10">
+          <p className="text-lg leading-relaxed text-[#333336]">
+            <strong>Indiversa Storefront Builder is a</strong> premier digital storefront development service empowering local businesses in Maheshtala and Kolkata to sell effortlessly online. Setup a professional WhatsApp store catalog in seconds, generate a unique Magic Link, and allow your customers to order directly with auto-calculated pricing and beautifully formatted product lists.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">Features Developed for Growth</h2>
+          <ul className="list-disc pl-6 space-y-3 text-[#4d4d50]">
+            <li>Generate instant Magic Links for seamless WhatsApp orders.</li>
+            <li>Real-time automated price calculations for correct invoices.</li>
+            <li>Zero-commission model directly connecting buyers and sellers.</li>
+            <li>Designed and optimized specifically for smartphone displays.</li>
+            <li>Essential for growing digital footprints across Maheshtala and Kolkata.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 className="text-xl font-bold mb-6 tracking-tight">Frequently Asked Questions</h3>
+          
+          <div className="space-y-6">
+            <div>
+              <h4 className="font-semibold text-lg">How does the Magic Link operate?</h4>
+              <p className="text-[#4d4d50] mt-1 leading-relaxed">
+                Once a customer clicks the link in your social media bio, it opens their WhatsApp app with a perfectly formatted, pre-filled order message ready to be sent directly to your phone.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold text-lg">Who is this development solution for?</h4>
+              <p className="text-[#4d4d50] mt-1 leading-relaxed">
+                It's an essential digital storefront tool tailored for home bakers, boutique owners, local artisans, and small business operators situated primarily in the Maheshtala and Kolkata regions.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold text-lg">Do my customers need to download a separate app?</h4>
+              <p className="text-[#4d4d50] mt-1 leading-relaxed">
+                No extra apps needed. Everything works seamlessly via WhatsApp, the platform they already use and trust daily.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+    </main>
   );
 }
