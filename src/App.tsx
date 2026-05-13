@@ -263,6 +263,39 @@ export default function App() {
           </ul>
         </section>
 
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">About Us: A Decade of Digital Excellence</h2>
+          <p className="text-[#4d4d50] mt-1 leading-relaxed mb-4">
+            At Indiversa, we bring over 10+ years of deep-rooted digital and business experience serving the vibrant communities of Maheshtala, Kolkata, and beyond. We understand the unique challenges local merchants face when transitioning to the online space—cost, complexity, and steep learning curves.
+          </p>
+          <p className="text-[#4d4d50] leading-relaxed">
+            Our mission is to democratize ecommerce. By combining world-class technology with local market insights, we've crafted a storefront builder that eliminates barriers to entry, empowering artisans, suppliers, and retailers to connect with their customers instantly and professionally.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">How Our Zero-Cost, Cloudflare-Powered Storefronts Work</h2>
+          <p className="text-[#4d4d50] leading-relaxed mb-4">
+            Traditional web hosting often involves recurring monthly fees, database maintenance, and slow server response times, which can turn away potential customers. Our storefronts operate on a fundamentally different architecture, leveraging the power of edge computing. Instead of relying on a single central server, your digital catalog is distributed across a global network quickly and securely.
+          </p>
+          <p className="text-[#4d4d50] leading-relaxed mb-4">
+            This serverless, edge-driven approach means when a customer clicks your Magic Link in Kolkata or anywhere else, the page loads almost instantaneously. Because there is no heavy database backend or bloated CMS to manage, we can offer incredible performance with zero hosting costs, passing the benefits directly to local builders and business owners.
+          </p>
+          <p className="text-[#4d4d50] leading-relaxed">
+            Every transaction is seamlessly directed to your WhatsApp inbox. You maintain complete control over your customer interactions, payments, and data, without paying middleman commissions or navigating complex dashboards. It's the speed of the global cloud, localized perfectly for your mobile device.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">Local Business Case Study: Amplifying Leads seamlessly</h2>
+          <p className="text-[#4d4d50] leading-relaxed mb-4">
+            Consider a local <strong>Steel Door Manufacturer</strong> or mineral water supplier situated in Maheshtala. Traditionally, they relied on walk-in clients and word-of-mouth. By adopting the Indiversa Storefront Builder, the owner creates a sleek catalog featuring their top products with pricing variations. 
+          </p>
+          <p className="text-[#4d4d50] leading-relaxed">
+            They place the generated Magic Link directly in their Facebook Page bio and local WhatsApp community groups. A prospective client sees an appealing post, taps the link, and immediately browses the catalog without waiting for a website to load. With a few taps, the client selects their items and hits order. The owner instantly receives a formatted WhatsApp message with exactly what the client wants, converting a casual browser into an actionable local lead, all handled securely over chat.
+          </p>
+        </section>
+
         <section>
           <h3 className="text-xl font-bold mb-6 tracking-tight">Frequently Asked Questions</h3>
           
