@@ -100,7 +100,7 @@ export default function App() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-[1.25rem] bg-gradient-to-b from-[#25D366] to-[#128C7E] shadow-[0_8px_16px_rgba(37,211,102,0.25)] mb-4 text-white">
             <Store size={32} strokeWidth={2.5} />
           </div>
-          <h1 className="text-2xl font-semibold tracking-tight">Indiversa Storefront Builder</h1>
+          <h2 className="text-2xl font-semibold tracking-tight">Indiversa Storefront Builder</h2>
           <p className="text-[#86868b] text-sm mt-1 font-medium">Generate your storefront magic link</p>
         </header>
 
