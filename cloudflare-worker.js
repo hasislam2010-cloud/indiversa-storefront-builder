@@ -11,33 +11,57 @@ const HTML_CONTENT = `<!doctype html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Verification Tags -->
     <meta name="msvalidate.01" content="C1F510BC681B6D2B8165EE8F9C66440F" />
     <meta name="google-site-verification" content="sEj_pW-wClPiqNvs39-2pSvvw_llINa9GhKcqiEBGLk" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Indiversa Storefront Builder | WhatsApp Magic Link Generator</title>
+    <meta name="description" content="Create your professional digital storefront in seconds. Indiversa helps Maheshtala and Kolkata businesses generate WhatsApp magic links for seamless ordering." />
+    <meta name="keywords" content="WhatsApp store, storefront builder Maheshtala, Kolkata digital marketing, WhatsApp magic link, Indiversa" />
     <link rel="canonical" href="https://indiversa-storefront-builder.hasislam2010.workers.dev/" />
-    <title>Indiversa Storefront Builder</title>
+
+    <!-- JSON-LD Schema (Bing loves this) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Indiversa Storefront Builder",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Maheshtala",
+          "addressRegion": "West Bengal",
+          "addressCountry": "IN"
+        },
+        "description": "Empowering local businesses with zero-cost WhatsApp storefronts.",
+        "url": "https://indiversa-storefront-builder.hasislam2010.workers.dev/"
+      }
+    </script>
     <!-- Keep the rest of your head tags, CSS, and JS here -->
   </head>
   <body>
-    <!-- Visible Loading Screen for Users & Search Engines -->
-    <div id="seo-loading-screen" style="text-align: center; padding: 50px; font-family: sans-serif; color: #333;">
-      <h1>Indiversa Storefront Builder: Create WhatsApp Ordering Links for Your Business</h1>
-      <p>Indiversa Storefront Builder is a digital storefront development service empowering local businesses to sell effortlessly online via magic links for seamless WhatsApp orders.</p>
-      <p style="color: #666; font-size: 14px;"><em>Loading your storefront tools...</em></p>
+    <!-- 1. The SEO Content Block (Visible to Crawlers) -->
+    <div id="seo-content" style="padding: 20px; text-align: center; font-family: sans-serif;">
+      <h1>Indiversa Storefront Builder: Create WhatsApp Ordering Links</h1>
+      <p>Build your professional storefront and generate magic links for direct WhatsApp orders in Maheshtala and Kolkata.</p>
     </div>
 
+    <!-- 2. The React Root -->
     <div id="root">
         <!-- Rendered App Content Goes Here -->
     </div>
 
-    <!-- Script to remove the loading screen once your app starts loading -->
+    <!-- 3. The Script to swap SEO content for your App -->
     <script>
-      // This simple script hides the SEO text once your React app is ready
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          var loader = document.getElementById('seo-loading-screen');
-          if (loader) loader.style.display = 'none';
-        }, 500); // Hides it half a second after load
+      // When the React app (root) has content, hide the SEO loading text
+      const observer = new MutationObserver(() => {
+        if (document.getElementById('root').children.length > 0) {
+          document.getElementById('seo-content').style.display = 'none';
+          observer.disconnect();
+        }
       });
+      observer.observe(document.getElementById('root'), { childList: true });
     </script>
   </body>
 </html>`;
