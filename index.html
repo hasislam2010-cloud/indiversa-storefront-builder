@@ -38,7 +38,26 @@
     </script>
   </head>
   <body>
+    <!-- Visible Loading Screen for Users & Search Engines -->
+    <div id="seo-loading-screen" style="text-align: center; padding: 50px; font-family: sans-serif; color: #333;">
+      <h1>Indiversa Storefront Builder: Create WhatsApp Ordering Links for Your Business</h1>
+      <p>Indiversa Storefront Builder is a digital storefront development service empowering local businesses to sell effortlessly online via magic links for seamless WhatsApp orders.</p>
+      <p style="color: #666; font-size: 14px;"><em>Loading your storefront tools...</em></p>
+    </div>
+
     <div id="root"></div>
+
+    <!-- Script to remove the loading screen once your app starts loading -->
+    <script>
+      // This simple script hides the SEO text once your React app is ready
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var loader = document.getElementById('seo-loading-screen');
+          if (loader) loader.style.display = 'none';
+        }, 500); // Hides it half a second after load
+      });
+    </script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
